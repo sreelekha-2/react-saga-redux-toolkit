@@ -6,7 +6,6 @@ const initialState = {
 };
 
 const counterReducer = createReducer(initialState, (builder) => {
-  console.log('reducer');
   builder.addCase('INC_PAYLOAD', (state, action) => {
     state.count = state.count + action.payload;
   });
